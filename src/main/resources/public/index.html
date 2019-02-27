@@ -21,9 +21,9 @@
 		body {background-color: powderblue;  margin-top: 100px;
             margin-bottom: 100px;
             margin-right: 150px;
-            margin-left: 80px;}
-		h1   {font-family: verdana;}
-		p    {font-family: verdana;}
+            margin-left: 80px;
+		font-family: verdana;}
+		ul {font-size:80%}
 		table, th, td {
 		text-align:center; 
 		width:10%;
@@ -34,7 +34,7 @@
 </head>
 <body>
 <h1>Product Checkout</h1>
-<form action="" method="post" name="testform" onsubmit="showOrder(this)">
+<form action="" method="" name="testform" onsubmit="showOrder(this)">
     <table>
         <tr>
             <td><p>Product</p></td>
@@ -100,20 +100,21 @@
     <input type="submit" name="submit" value="Ready"/>
 </form>
 
-<h2>Things you can try with this webservice:</h2>
-<p>GET request -> /employees</p>
-<p>GET request -> /employees/3</p>
-<p>PUT request -> /employees/6 -> Body: {"id":"8","age":"40","gender":"F","name":"Test",
+<h3>Things you can do with this webservice:</h3>
+<h6>(Use curl or postman to form POST, PUT and DELETE requests)</h6>
+<ul><a href="https://sda-homework.herokuapp.com/employees">Get all employees</a></ul>
+<ul><a href="https://sda-homework.herokuapp.com/employees/1">Get first employee</a></ul>
+<ul>PUT request -> /employees/6 -> Body: {"id":"8","age":"40","gender":"F","name":"Test",
     "salary":"300000",
-    "department": {"deptId":"2", "deptName":"IT"},"surname":"Lastname"}</p>
-<p>POST request -> /employees -> Body: {"id":"8","age":"40","gender":"F","name":"Feride",
+    "department": {"deptId":"2", "deptName":"IT"},"surname":"Lastname"}</ul>
+<ul>POST request -> /employees -> Body: {"id":"8","age":"40","gender":"F","name":"Feride",
     "salary":"300000",
-    "department": {"deptId":"2", "deptName":"IT"},"surname":"Celik"}</p>
-<p>DELETE request -> /employees/3</p>
-<p>GET request -> /departments</p>
-<p>GET request -> /departments/2</p>
-<p>POST request -> /departments -> Body: {"deptName": "Logistics"}</p>
-<p>PUT request -> /departments/2 -> Body: {"deptName": "SCM"}</p>
-<p>DELETE request -> /departments/2</p>
+    "department": {"deptId":"2", "deptName":"IT"},"surname":"Celik"}</ul>
+<ul>DELETE request -> /employees/3</ul>
+<ul><a href="https://sda-homework.herokuapp.com/departments">Get all departments</a></ul>
+<ul><a href="https://sda-homework.herokuapp.com/departments/1">Get first department</a></ul>
+<ul>POST request -> /departments -> Body: {"deptName": "Logistics"}</ul>
+<ul>PUT request -> /departments/2 -> Body: {"deptName": "SCM"}</ul>
+<ul>DELETE request -> /departments/2</ul>
 </body>
 </html>
