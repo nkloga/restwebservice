@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Homework form</title>
+    <script type="text/javascript">
+		function showOrder(form) {
+			var orange = form.orange.value;
+			var apple = form.apple.value;
+			var banana = form.banana.value;
+			var pear = form.pear.value;
+			var result = "Oranges: " + orange 
+			+ "\n" + "Apples: " + apple
+			+ "\n" + "Banana: " + banana
+			+ "\n" + "Pear: " + pear;
+			alert(result);
+		}
+
+    </script>
+    <style>
+		body {background-color: powderblue;  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;}
+		h1   {font-family: verdana;}
+		p    {font-family: verdana;}
+		table, th, td {
+		text-align:center; 
+		width:10%;
+		}
+		input {width:10%;}
+
+    </style>
+</head>
+<body>
+<h1>Product Checkout</h1>
+<form action="" method="post" name="testform" onsubmit="showOrder(this)">
+    <table>
+        <tr>
+            <td><p>Product</p></td>
+            <td><p>Quantity</p></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="orange">Orange</label>
+            </td>
+            <td>
+                <select name="orange" id="orange">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="apple">Apple</label>
+            </td>
+            <td>
+                <select name="apple" id="apple">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="banana">Banana</label>
+            </td>
+            <td>
+                <select name="banana" id="banana">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pear">Pear</label>
+            </td>
+            <td>
+                <select name="pear" id="pear">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="submit" value="Ready"/>
+</form>
+
+<h2>Things you can try with this webservice:</h2>
+<p>GET request -> /employees</p>
+<p>GET request -> /employees/3</p>
+<p>PUT request -> /employees/6 -> Body: {"id":"8","age":"40","gender":"F","name":"Test",
+    "salary":"300000",
+    "department": {"deptId":"2", "deptName":"IT"},"surname":"Lastname"}</p>
+<p>POST request -> /employees -> Body: {"id":"8","age":"40","gender":"F","name":"Feride",
+    "salary":"300000",
+    "department": {"deptId":"2", "deptName":"IT"},"surname":"Celik"}</p>
+<p>DELETE request -> /employees/3</p>
+<p>GET request -> /departments</p>
+<p>GET request -> /departments/2</p>
+<p>POST request -> /departments -> Body: {"deptName": "Logistics"}</p>
+<p>PUT request -> /departments/2 -> Body: {"deptName": "SCM"}</p>
+<p>DELETE request -> /departments/2</p>
+</body>
+</html>
