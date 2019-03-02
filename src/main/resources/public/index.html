@@ -16,6 +16,7 @@
 			alert(result);
 		}
 
+
     </script>
     <style>
 		body {background-color: powderblue;  margin-top: 100px;
@@ -116,5 +117,25 @@
 <ul>POST request -> /departments -> Body: {"deptName": "Logistics"}</ul>
 <ul>PUT request -> /departments/2 -> Body: {"deptName": "SCM"}</ul>
 <ul>DELETE request -> /departments/2</ul>
+
+<form class="form-signin" method="POST" action="https://sda-homework.herokuapp.com/employees">
+    <h2 class="form-signin-heading">Please sign in</h2>
+
+    <ul><input class="form-control" type="text" required name="id" placeholder="id"></ul>
+    <ul><input class="form-control" type="text" required name="age" placeholder="age"></ul>
+    <ul><input class="form-control" type="text" required name="gender" placeholder="gender"></ul>
+    <ul><input class="form-control" type="text" required name="first_name" placeholder="first name"></ul>
+    <ul><input class="form-control" type="text" required name="last_name" placeholder="last name"></ul>
+    <ul><input class="form-control" type="text" required name="salary" placeholder="salary"></ul>
+    <ul><input class="form-control" type="text" required name="dept_id" placeholder="department id"></ul>
+    <ul><input class="form-control" type="text" required name="dept_name" placeholder="department name"></ul>
+
+
+
+
+    <label class="checkbox"></label>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
+
 </body>
 </html>

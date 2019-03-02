@@ -1,5 +1,6 @@
 package app.entity;
 
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 
@@ -33,6 +34,7 @@ public class Employee {
     public Long getId() {
         return id;
     }
+
 
     public String getName() {
         return name;
